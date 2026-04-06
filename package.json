@@ -1,0 +1,14 @@
+{
+  "name": "eneclient",
+  "version": "1.0.0",
+  "description": "eñeclient - Minecraft Utility Client Launcher",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^36.0.0",
+    "minecraft-launcher-core": "^3.18.2",
+    "msmc": "^5.0.5"
+  }
+}

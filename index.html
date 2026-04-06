@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>eñeclient</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="titlebar">
+    <div class="titlebar-left">
+      <div class="logo-dot"></div>
+      <span class="logo-text">eñeclient</span>
+    </div>
+    <div class="titlebar-controls">
+      <button class="btn-minimize" id="minimizeBtn">─</button>
+      <button class="btn-close" id="closeBtn">✕</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <div class="sidebar-profile">
+        <div class="profile-avatar-wrap">
+          <img class="profile-avatar" id="profileAvatar" src="https://mc-heads.net/avatar/steve/100" />
+        </div>
+        <div class="profile-info">
+          <div class="profile-name" id="profileName">Sin sesión</div>
+          <div class="profile-logout" id="logoutBtn">Cerrar sesión</div>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="nav-item active" data-tab="home">
+        <span class="nav-icon">⌂</span><span>Inicio</span>
+      </div>
+      <div class="nav-item" data-tab="news">
+        <span class="nav-icon">📰</span><span>Noticias</span>
+      </div>
+      <div class="nav-item" data-tab="settings">
+        <span class="nav-icon">⚙</span><span>Ajustes</span>
+      </div>
+      <div class="nav-item" data-tab="about">
+        <span class="nav-icon">◈</span><span>Acerca de</span>
+      </div>
+    </div>
+
+    <div class="main-panel">
+
+      <!-- INICIO -->
+      <div class="tab-content active" id="tab-home">
+        <div class="welcome-section">
+          <h1 class="welcome-title">Bienvenido a <span class="gradient-text">eñeclient</span></h1>
+          <p class="welcome-sub">Tu cliente de Minecraft personalizado</p>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-card">
+            <div class="stat-value" id="timeDisplay">--:--</div>
+            <div class="stat-label">Hora actual</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="versionDisplay">1.8.9</div>
+            <div class="stat-label">Versión seleccionada</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="ramDisplay">4 GB</div>
+            <div class="stat-label">RAM asignada</div>
+          </div>
+        </div>
+
+        <div class="section-title">Últimas noticias</div>
+        <div class="news-mini" id="newsMini">
+          <div class="news-loading">Cargando...</div>
+        </div>
+
+        <button class="launch-btn" id="launchBtn">
+          <span class="launch-icon">▶</span>
+          Lanzar Minecraft
+        </button>
+      </div>
+
+      <!-- NOTICIAS -->
+      <div class="tab-content" id="tab-news">
+        <div class="section-title">Noticias de Minecraft</div>
+        <div class="news-grid" id="newsGrid">
+          <div class="news-loading">Cargando noticias...</div>
+        </div>
+      </div>
+
+      <!-- AJUSTES -->
+      <div class="tab-content" id="tab-settings">
+        <div class="section-title">Ajustes</div>
+        <div class="settings-list">
+          <div class="setting-row">
+            <div class="setting-info">
+              <div class="setting-name">Versión de Minecraft</div>
+              <div class="setting-desc">Versión que se lanzará al pulsar el botón</div>
+            </div>
+            <select class="setting-select" id="versionSelect">
+              <option value="1.8.9">1.8.9</option>
+              <option value="1.12.2">1.12.2</option>
+              <option value="1.16.5">1.16.5</option>
+              <option value="1.18.2">1.18.2</option>
+              <option value="1.19.4">1.19.4</option>
+              <option value="1.20.4">1.20.4</option>
+              <option value="1.21.4">1.21.4</option>
+            </select>
+          </div>
+          <div class="setting-row">
+            <div class="setting-info">
+              <div class="setting-name">RAM asignada</div>
+              <div class="setting-desc">Memoria RAM para Minecraft</div>
+            </div>
+            <select class="setting-select" id="ramSelect">
+              <option value="2G">2 GB</option>
+              <option value="4G" selected>4 GB</option>
+              <option value="6G">6 GB</option>
+              <option value="8G">8 GB</option>
+              <option value="12G">12 GB</option>
+            </select>
+          </div>
+          <div class="setting-row">
+            <div class="setting-info">
+              <div class="setting-name">Tema de color</div>
+              <div class="setting-desc">Estilo visual del cliente.</div>
+            </div>
+            <select class="setting-select" id="themeSelect">
+              <option value="purple-green">Morado & Verde (Default)</option>
+              <option value="blue-cyan">Azul & Cyan</option>
+              <option value="red-orange">Rojo & Naranja</option>
+              <option value="pink-yellow">Rosa & Amarillo</option>
+              <option value="teal-purple">Teal & Morado</option>
+              <option value="white-blue">Blanco & Azul</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACERCA DE -->
+      <div class="tab-content" id="tab-about">
+        <div class="about-center">
+          <div class="about-logo">eñeclient</div>
+          <div class="about-version">v1.0.0</div>
+          <p class="about-desc">Launcher de minecraft porque si. ARRIBA LA Ñ.🐙</p>
+          <div class="about-tags">
+            <span class="tag">Minecraft Java</span>
+            <span class="tag">Electron</span>
+            <span class="tag">Open Source</span>
+            <span class="tag">Microsoft Auth</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
