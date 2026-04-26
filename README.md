@@ -30,6 +30,6 @@ npm start
 ```
 ---
 
-web eñeclient.my.canva.site
+web: https://eñeclient.my.canva.site
 
 bugs/sugerencias: https://forms.gle/M7Cg2ToVFJjFHELi9
