@@ -6,8 +6,8 @@ Un launcher de **Minecraft** sencillo, ligero y versátil.
 
 ## 🚀 **¿Por qué deberia usarlo?**
 
-- Varias *cuentas* premium y no premium a la vez
-- Puedes elegir entre versiones oficiales o *Optifine* Y *Fabric*
+- Varias ***cuentas*** premium y no premium a la vez
+- Puedes elegir entre versiones oficiales y ***Optifine*** o ***Fabric***
 - Configuración básica (*RAM, versión, etc.*)
 - Interfaz innovadora y minimalista 
 
@@ -15,8 +15,8 @@ Un launcher de **Minecraft** sencillo, ligero y versátil.
 
 ## 📦 **Cómo usarlo**
 
-Descarga el `.exe` desde **Releases** y ejecútalo.  
-Ya está, no tiene mucho más 😅
+Descarga el `.exe` desde **Releases** y ejecútalo.
+(cualquier aviso de windows defender es debido a la falta de firma de la app)
 
 ---
 
