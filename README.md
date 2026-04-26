@@ -27,3 +27,8 @@ git clone https://github.com/tu-usuario/eneclient.git
 cd eneclient
 npm install
 npm start
+
+---
+
+web:https: eñeclient.my.canva.site
+bugs/sugerencias: https://forms.gle/M7Cg2ToVFJjFHELi9
